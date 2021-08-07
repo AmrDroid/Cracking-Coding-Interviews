@@ -44,13 +44,6 @@ class MinnStack {
 
         return this.s.peek().min;
     }
-}
-
-
-class GFG {
-
-
-
     public static void main (String[] args) {
         MinnStack s=new MinnStack();
         s.push(-1);
@@ -65,3 +58,5 @@ class GFG {
 
     }
 }
+
+
