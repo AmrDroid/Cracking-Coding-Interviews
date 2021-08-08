@@ -6,6 +6,8 @@ public class Atoi {
 //    Only one traversal of string is needed.
 //    Space Complexity: O(1).
 
+
+    //    The atoi() function in C takes a string (which represents an integer) as an argument and returns its value of type int. So basically the function is used to convert a string argument to an integer.
     static int myAtoi(char[] str) {
         int sign = 1, base = 0, i = 0;
 
@@ -40,7 +42,7 @@ public class Atoi {
 
     // Driver code
     public static void main(String[] args) {
-        char str[] = "aa-123".toCharArray();
+        char str[] = "aa123".toCharArray();
 
         // Function call
         int val = myAtoi(str);
