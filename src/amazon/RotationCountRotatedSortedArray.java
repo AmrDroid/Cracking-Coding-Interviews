@@ -1,6 +1,6 @@
 package amazon;
 
-public class RotationCountRotatedSorted {
+public class RotationCountRotatedSortedArray {
 
     static int countRotations(int arr[], int low,
                               int high)
