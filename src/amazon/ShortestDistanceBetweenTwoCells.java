@@ -98,7 +98,8 @@ public class ShortestDistanceBetweenTwoCells {
 
     // Driver code
     public static void main(String[] args) {
-        char[][] grid = {{'0', '*', '0', 's'},
+        char[][] grid = {
+                {'0', '*', '0', 's'},
                 {'*', '0', '*', '*'},
                 {'0', '*', '*', '*'},
                 {'d', '*', '*', '*'}};
