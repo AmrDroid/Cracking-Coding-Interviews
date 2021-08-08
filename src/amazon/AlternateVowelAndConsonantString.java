@@ -80,7 +80,7 @@ public class AlternateVowelAndConsonantString {
     // Driver code
     public static void main(String args[])
     {
-        String str = "geeks";
+        String str = "geeeks";
         System.out.println(findAltStr(str));
     }
 
