@@ -1,6 +1,6 @@
 package amazon;
 
-public class Kadansalgorithm {
+public class Kadansalgorithm_MaximumContiguousSum {
 
     static void maxSubArraySum(int a[], int size)
     {

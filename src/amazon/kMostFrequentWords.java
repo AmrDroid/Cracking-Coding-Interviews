@@ -66,7 +66,7 @@ class WordFreq {
     public static void main (String[] args){
         kMostFrequentWords t = new kMostFrequentWords();
         String[] words = createGiantArray();
-        int k = 2;
+        int k = 10;
         List<String> res = new ArrayList<String>();
         res = t.topKFrequentAlternate(words,k);
         ListIterator<String> lItr = res.listIterator();

@@ -2,7 +2,7 @@ package amazon;
 
 import java.util.Arrays;
 
-public class CountInversionsArray {
+public class  CountInversionsArray {
 
     private static int mergeAndCount(int[] arr, int l,
                                      int m, int r)

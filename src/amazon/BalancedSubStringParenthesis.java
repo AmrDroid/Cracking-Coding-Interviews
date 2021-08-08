@@ -1,6 +1,6 @@
 package amazon;
 
-public class BalancedParenthesis {
+public class BalancedSubStringParenthesis {
 
     public static int Balanced_Substring(String str,
                                          int n)

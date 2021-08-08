@@ -71,7 +71,8 @@ public class FindAllOccurrencesGivenWordMatrix {
     // Driver code
     public static void main(String[] args)
     {
-        char mat[][]= { {'B', 'N', 'E', 'Y', 'S'},
+        char mat[][]= {
+                {'B', 'N', 'E', 'Y', 'S'},
                 {'H', 'E', 'D', 'E', 'S'},
                 {'S', 'G', 'N', 'D', 'E'}};
 

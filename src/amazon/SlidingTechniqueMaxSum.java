@@ -1,6 +1,6 @@
 package amazon;
 
-public class SlidingTechnique {
+public class SlidingTechniqueMaxSum {
 
     // Returns maximum sum in
     // a subarray of size k.

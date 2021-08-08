@@ -15,7 +15,7 @@ class GFG2
     }
 }
 
-public class MinNumOpConvert {
+class MinNumOpConvert {
     private static int minOperations(int src,
                                      int target) {
 

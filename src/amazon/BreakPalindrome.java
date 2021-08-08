@@ -1,7 +1,7 @@
 package amazon;
 
 public class BreakPalindrome {
-    public String breakPalindrome(String palindrome) {
+   static public String breakPalindrome(String palindrome) {
         // If empty or of length 1 => return empty
         if (palindrome.length() <= 1) {
             return "";
@@ -22,5 +22,10 @@ public class BreakPalindrome {
             }
         }
         return String.valueOf(chars);
+    }
+
+    public static void main(String[] args) {
+    System.out.println(breakPalindrome("abccba"));
+
     }
 }

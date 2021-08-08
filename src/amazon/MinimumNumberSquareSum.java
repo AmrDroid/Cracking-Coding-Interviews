@@ -71,7 +71,7 @@ public class MinimumNumberSquareSum {
     // Driver code
     public static void main(String[] args)
     {
-        System.out.println(numSquares(12));
+        System.out.println(numSquares(15));
     }
 
 

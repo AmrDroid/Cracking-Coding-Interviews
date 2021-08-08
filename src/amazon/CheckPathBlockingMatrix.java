@@ -34,8 +34,9 @@ public class CheckPathBlockingMatrix {
     //Driver code
     public static void main(String[] args) {
         // Given array
-        int arr[][] = {{0, 0, 0, -1, 0},
-                {-1, 0, 0, -1, -1},
+        int arr[][] = {
+                {0, 0, 0, -1, 0},
+                {-1, 0, 0,-1,-1},
                 {0, 0, 0, -1, 0},
                 {-1, 0, 0, 0, 0},
                 {0, 0, -1, 0, 0}};
