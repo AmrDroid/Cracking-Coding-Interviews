@@ -71,9 +71,7 @@ class ZigZagTreeTraversal {
             }
         }
     }
-}
 
- class zigZagTreeTraversal {
 
     // driver program to test the above function
     public static void main(String[] args)

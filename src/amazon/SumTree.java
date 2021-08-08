@@ -1,19 +1,20 @@
 package amazon;
 
-class node
-{
-    int data;
-    amazon.node left, right, nextRight;
 
-    node(int item)
-    {
-        data = item;
-        left = right = nextRight = null;
-    }
-}
 
 class SumTree
 {
+   static class node
+    {
+        int data;
+        node left, right, nextRight;
+
+        node(int item)
+        {
+            data = item;
+            left = right = nextRight = null;
+        }
+    }
     node root;
 
     /* Utility function to check if the given node is leaf or not */

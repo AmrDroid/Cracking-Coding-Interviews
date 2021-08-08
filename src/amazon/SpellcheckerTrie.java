@@ -2,20 +2,20 @@ package amazon;
 import java.io.*;
 
 // Structure of a Trie node
-class TrieNode
+class TrieNod
 {
 
     // Store address of a character
-    TrieNode Trie[];
+    TrieNod Trie[];
 
     // Check if the character is
     // last character of a string or not
     boolean isEnd;
 
     // Constructor function
-    public TrieNode()
+    public TrieNod()
     {
-        Trie = new TrieNode[256];
+        Trie = new TrieNod[256];
         for(int i = 0; i < 256; i++)
         {
             Trie[i] = null;
@@ -27,9 +27,9 @@ class TrieNode
 class SpellcheckerTrie{
 
     // Function to insert a string into Trie
-    static void InsertTrie(TrieNode root, String s)
+    static void InsertTrie(TrieNod root, String s)
     {
-        TrieNode temp = root;
+        TrieNod temp = root;
 
         // Traverse the string, s
         for(int i = 0; i < s.length(); i++)
@@ -38,7 +38,7 @@ class SpellcheckerTrie{
             {
 
                 // Initialize a node
-                temp.Trie[s.charAt(i)] = new TrieNode();
+                temp.Trie[s.charAt(i)] = new TrieNod();
             }
 
             // Update temp
@@ -51,7 +51,7 @@ class SpellcheckerTrie{
     }
 
     // Function to print suggestions of the string
-    static void printSuggestions(TrieNode root, String res)
+    static void printSuggestions(TrieNod root, String res)
     {
 
         // If current character is
@@ -82,7 +82,7 @@ class SpellcheckerTrie{
 
     // Function to check if the string
 // is present in Trie or not
-    static boolean checkPresent(TrieNode root, String key)
+    static boolean checkPresent(TrieNod root, String key)
     {
 
         // Traverse the string
@@ -120,7 +120,7 @@ class SpellcheckerTrie{
         String key = "geek";
 
         // Initialize a Trie
-        TrieNode root = new TrieNode();
+        TrieNod root = new TrieNod();
 
         // Insert strings to trie
         for(int i = 0; i < str.length; i++)
