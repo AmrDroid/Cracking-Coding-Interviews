@@ -3,7 +3,7 @@ package amazon;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Sorting2DArray {
+public class Sorting2DArrayByColumn {
 
     // Function to sort by column
     public static void sortbyColumn(int arr[][], int col) {
@@ -27,7 +27,8 @@ public class Sorting2DArray {
 
     // Driver Code
     public static void main(String args[]) {
-        int matrix[][] = {{39, 27, 11, 42},
+        int matrix[][] = {
+                {39, 27, 11, 42},
                 {10, 93, 91, 90},
                 {54, 78, 56, 89},
                 {24, 64, 20, 65}};
