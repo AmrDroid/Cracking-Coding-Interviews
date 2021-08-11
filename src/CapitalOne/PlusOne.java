@@ -51,6 +51,16 @@ public class PlusOne {
         int[]ans=plusOne(arr);
         System.out.println(Arrays.toString(ans));
         System.out.println(Arrays.toString(plusOne2(arr2)));
+
+        test(null);
     }
+    static void test(int obj){
+        System.out.println("test2");
+    }
+  static   void test(String str){
+
+       System.out.println("test1");
+    }
+
 
 }
