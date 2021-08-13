@@ -34,7 +34,7 @@ public class AdjacencyMatrix {
                 = new ArrayList<ArrayList<Integer> >(V);
 
         for (int i = 0; i < V; i++)
-            adj.add(new ArrayList<Integer>());
+            adj.add(new ArrayList<>());
 
         // Adding edges one by one
         addEdge(adj, 0, 1);
