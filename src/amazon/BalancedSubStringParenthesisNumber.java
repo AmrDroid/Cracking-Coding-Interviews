@@ -1,11 +1,9 @@
 package amazon;
 
-public class BalancedSubStringParenthesis {
+public class BalancedSubStringParenthesisNumber {
 
-    public static int Balanced_Substring(String str,
-                                         int n)
+    public static int Balanced_Substring(String str, int n)
     {
-
         // To store required answer
         int ans = 0;
 
@@ -17,6 +15,7 @@ public class BalancedSubStringParenthesis {
         // For example level of () is 1
         // and that of (()) is 2.
         int d = 0;
+
         for (int i = 0; i < n; i++) {
 
             // If open bracket
@@ -44,7 +43,7 @@ public class BalancedSubStringParenthesis {
     // Driver code
     public static void main(String[] args)
     {
-        String str = "()()()";
+        String str = "(()()()";
         int n = str.length();
 
         // Function call
