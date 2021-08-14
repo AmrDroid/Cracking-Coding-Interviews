@@ -3,12 +3,10 @@ package amazon;
 import java.util.Arrays;
 
 public class Kclosestpointstoorigin {
-    static void pClosest(int [][]pts, int k)
-    {
+    static void pClosest(int[][] pts, int k) {
         int n = pts.length;
         int[] distance = new int[n];
-        for(int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             int x = pts[i][0], y = pts[i][1];
             distance[i] = (x * x) + (y * y);
         }
@@ -20,8 +18,7 @@ public class Kclosestpointstoorigin {
 
         // Print all distances which are
         // smaller than k-th distance
-        for(int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             int x = pts[i][0], y = pts[i][1];
             int dist = (x * x) + (y * y);
 
@@ -31,11 +28,8 @@ public class Kclosestpointstoorigin {
     }
 
     // Driver code
-    public static void main (String[] args)
-    {
-        int points[][] = { { 3, 3 },
-                { 5, -1 },
-                { -2, 4 } };
+    public static void main(String[] args) {
+        int points[][] = {{1, 2}, {3, 4}, {1, -1}};
 
         int K = 2;
 
