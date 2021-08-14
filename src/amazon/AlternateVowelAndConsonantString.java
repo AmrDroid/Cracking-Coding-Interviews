@@ -1,10 +1,9 @@
 package amazon;
 
 public class AlternateVowelAndConsonantString {
-    static boolean isVowel(char ch)
-    {
+    static boolean isVowel(char ch) {
         if (ch == 'a' || ch == 'e' || ch == 'i' ||
-                ch == 'o' || ch =='u')
+                ch == 'o' || ch == 'u')
             return true;
         return false;
     }
@@ -12,8 +11,7 @@ public class AlternateVowelAndConsonantString {
     // create alternate vowel and consonant string
 // str1[0...l1-1] and str2[start...l2-1]
     static String createAltStr(String str1, String str2,
-                               int start, int l)
-    {
+                               int start, int l) {
         String finalStr = "";
 
         // first adding character of vowel/consonant
@@ -26,26 +24,22 @@ public class AlternateVowelAndConsonantString {
 
     // function to find the required
 // alternate vowel and consonant string
-    static String findAltStr(String str)
-    {
+    static String findAltStr(String str) {
         int nv = 0, nc = 0;
         String vstr = "", cstr = "";
         int l = str.length();
-        for (int i = 0; i < l; i++)
-        {
+        for (int i = 0; i < l; i++) {
             char ch = str.charAt(i);
 
             // count vowels and update vowel string
-            if (isVowel(ch))
-            {
+            if (isVowel(ch)) {
                 nv++;
                 vstr = vstr + ch;
             }
 
             // count consonants and update consonant
             // string
-            else
-            {
+            else {
                 nc++;
                 cstr = cstr + ch;
             }
@@ -78,10 +72,10 @@ public class AlternateVowelAndConsonantString {
     }
 
     // Driver code
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         String str = "geeeks";
         System.out.println(findAltStr(str));
     }
+
 
 }
