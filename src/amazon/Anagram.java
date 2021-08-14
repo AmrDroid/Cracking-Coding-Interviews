@@ -6,8 +6,14 @@ public class Anagram {
     // function to check if two strings
 // are anagrams of each other
     static boolean areAnagram(char[] str1,
-                              char[] str2)
-    {
+                              char[] str2) {
+        // If both strings are of different
+        // length. Removing this condition
+        // will make the program fail for
+        // strings like "aaca" and "aca"
+        if (str1.length != str2.length)
+            return false;
+
 
         // Create a count array and initialize
         // all values as 0
@@ -17,32 +23,24 @@ public class Anagram {
         // For each character in input strings,
         // increment count in the corresponding
         // count array
-        for(i = 0; i < str1.length; i++)
-        {
+        for (i = 0; i < str1.length; i++) {
             count[str1[i] - 'a']++;
             count[str2[i] - 'a']--;
         }
 
-        // If both strings are of different
-        // length. Removing this condition
-        // will make the program fail for
-        // strings like "aaca" and "aca"
-        if (str1.length != str2.length)
-            return false;
 
         // See if there is any non-zero
         // value in count array
-        for(i = 0; i < NO_OF_CHARS; i++)
-            if (count[i] != 0)
-            {
+        for (i = 0; i < NO_OF_CHARS; i++)
+            if (count[i] != 0) {
                 return false;
             }
         return true;
     }
 
+
     // Driver code
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         char str1[] = "geeksforgeeks".toCharArray();
         char str2[] = "forgeeksgeeks".toCharArray();
 
