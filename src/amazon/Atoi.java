@@ -7,7 +7,8 @@ public class Atoi {
 //    Space Complexity: O(1).
 
 
-    //    The atoi() function in C takes a string (which represents an integer) as an argument and returns its value of type int. So basically the function is used to convert a string argument to an integer.
+    //    The atoi() function in C takes a string (which represents an integer) as an argument and returns its value of type int.
+    //    So basically the function is used to convert a string argument to an integer.
     static int myAtoi(char[] str) {
         int sign = 1, base = 0, i = 0;
 
@@ -22,14 +23,10 @@ public class Atoi {
         }
 
         // checking for valid input
-        while (i < str.length
-                && str[i] >= '0'
-                && str[i] <= '9') {
-
+        while (i < str.length && str[i] >= '0' && str[i] <= '9')
+        {
             // handling overflow test case
-            if (base > Integer.MAX_VALUE / 10
-                    || (base == Integer.MAX_VALUE / 10
-                    && str[i] - '0' > 7)) {
+            if (base > Integer.MAX_VALUE / 10 || (base == Integer.MAX_VALUE / 10  && str[i] - '0' > 7)) {
                 if (sign == 1)
                     return Integer.MAX_VALUE;
                 else
@@ -42,7 +39,7 @@ public class Atoi {
 
     // Driver code
     public static void main(String[] args) {
-        char str[] = "aa123".toCharArray();
+        char str[] = "-123".toCharArray();
 
         // Function call
         int val = myAtoi(str);
