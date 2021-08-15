@@ -4,6 +4,7 @@ public class MaximumTipCalculator {
     // Function that finds the maximum tips
 // from the given arrays as per the
 // given conditions
+    //https://www.geeksforgeeks.org/maximum-tip-calculator-2/
     static int maximumTip(int []arr1,int []arr2,
                           int n, int x, int y)
     {
