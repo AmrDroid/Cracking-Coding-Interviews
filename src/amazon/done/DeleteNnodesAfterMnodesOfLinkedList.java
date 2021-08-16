@@ -1,6 +1,6 @@
-package amazon;
+package amazon.done;
 
-public class DeleteNnodesAfterMnodesLinkedList {
+public class DeleteNnodesAfterMnodesOfLinkedList {
     // A linked list node
     static class Node
     {
@@ -61,7 +61,6 @@ public class DeleteNnodesAfterMnodesLinkedList {
             t = curr.next;
             for (count = 1; count <= N && t != null; count++)
             {
-                Node temp = t;
                 t = t.next;
             }
 
@@ -91,8 +90,7 @@ public class DeleteNnodesAfterMnodesLinkedList {
         head=push(head, 2);
         head=push(head, 1);
 
-        System.out.printf("M = %d, N = %d \nGiven" +
-                "Linked list is :\n", M, N);
+        System.out.printf("M = %d, N = %d \nGiven Linked list is :\n", M, N);
         printList(head);
 
         skipMdeleteN(head, M, N);
