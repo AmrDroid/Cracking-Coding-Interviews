@@ -14,7 +14,7 @@ public class WordBreakProblem {
         // array of strings to be added in dictionary set.
         String temp_dictionary[] = {"mobile","samsung","sam","sung",
                 "man","mango","icecream","and",
-                "go","i","like","ice","cream"};
+                "go","i","like","ice","cream","ili","kesamsung"};
 
         // loop to add all strings in dictionary set
         for (String temp :temp_dictionary)
@@ -24,11 +24,11 @@ public class WordBreakProblem {
 
         // sample input cases
         System.out.println(wordBreak("ilikesamsung"));
-        System.out.println(wordBreak("iiiiiiii"));
-        System.out.println(wordBreak(""));
-        System.out.println(wordBreak("ilikelikeimangoiii"));
-        System.out.println(wordBreak("samsungandmango"));
-        System.out.println(wordBreak("samsungandmangok"));
+//        System.out.println(wordBreak("iiiiiiii"));
+//        System.out.println(wordBreak(""));
+//        System.out.println(wordBreak("ilikelikeimangoiii"));
+//        System.out.println(wordBreak("samsungandmango"));
+//        System.out.println(wordBreak("samsungandmangok"));
 
     }
 
@@ -51,9 +51,12 @@ public class WordBreakProblem {
             // suffix of length size-i recursively. if both prefix and
             // suffix are present the word is found in dictionary.
 
-            if (dictionary.contains(word.substring(0,i)) &&
-                    wordBreak(word.substring(i,size)))
+            if (dictionary.contains(word.substring(0,i)) && wordBreak(word.substring(i,size)))
+            {
+                System.out.println(word.substring(0,i)+"  "+word.substring(i,size));
                 return true;
+
+            }
         }
 
         // if all cases failed then return false
