@@ -117,7 +117,7 @@ class SpellcheckerTrie{
         String str[] = { "gee", "geeks", "ape", "apple",
                 "geeksforgeeks" };
 
-        String key = "geek";
+        String key = "geeks";
 
         // Initialize a Trie
         TrieNod root = new TrieNod();
