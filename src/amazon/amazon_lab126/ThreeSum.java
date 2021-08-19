@@ -1,12 +1,11 @@
-package amazon;
+package amazon.amazon_lab126;
 
 import java.util.HashSet;
 
 public class ThreeSum {
 //    Time complexity: O(N^2)
 //    Auxiliary Space: O(N)
-    static boolean find3Numbers(int A[],
-                                int arr_size, int sum)
+    static boolean find3Numbers(int A[], int arr_size, int sum)
     {
         // Fix the first element as A[i]
         for (int i = 0; i < arr_size - 2; i++) {
