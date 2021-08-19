@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 import java.util.Arrays;
 
@@ -11,8 +11,7 @@ public class TwoSum {
 
         while (low < high) {
             if (arr[low] + arr[high] == sum) {
-                System.out.println("The pair is : ("
-                        + arr[low] + ", " + arr[high] + ")");
+                System.out.println("The pair is : (" + arr[low] + ", " + arr[high] + ")");
             }
             if (arr[low] + arr[high] > sum) {
                 high--;
