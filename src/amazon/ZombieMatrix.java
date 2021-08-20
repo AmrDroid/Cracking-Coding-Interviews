@@ -3,7 +3,7 @@ package amazon;
 import java.awt.*;
 import java.util.LinkedList;
 import java.util.Queue;
-
+///https://leetcode.com/discuss/interview-question/411357/
 public class ZombieMatrix {
     public int zombie(int[][] grid) {
         if (grid == null || grid.length == 0 || grid[0] == null || grid[0].length == 0) {
