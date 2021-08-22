@@ -1,9 +1,8 @@
-package amazon;
+package amazon.done;
 
 public class FindInstancesAtEndOfTimeFrameAfterAutoCcaling {
 
-    public static void finalInstances(int instances,
-                                      int[] arr)
+    public static void finalInstances(int instances, int[] arr)
     {
         int i = 0;
 
@@ -20,11 +19,9 @@ public class FindInstancesAtEndOfTimeFrameAfterAutoCcaling {
                 instances = (instances / 2);
                 i = i + 10;
             }
-
             // If the current element is
             // greater than 60
-            else if (arr[i] > 60 &&
-                    instances <= Math.pow(10, 8))
+            else if (arr[i] > 60 && instances <= Math.pow(10, 8))
             {
 
                 // Double the instances
@@ -43,8 +40,7 @@ public class FindInstancesAtEndOfTimeFrameAfterAutoCcaling {
     public static void main(String args[])
     {
         int instances = 2;
-        int[] arr = { 25, 23, 1, 2, 3, 4, 5,
-                6, 7, 8, 9, 10, 76, 80 };
+        int[] arr = { 25, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 76, 80 };
 
         // Function Call
         finalInstances(instances, arr);
