@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 class LinkedList
 {
@@ -27,11 +27,10 @@ class LinkedList
         {
             while (count < n)
             {
+                System.out.println(ref_ptr.data+"   "+count);
                 if (ref_ptr == null)
                 {
-                    System.out.println(n
-                            + " is greater than the no "
-                            + " of nodes in the list");
+                    System.out.println(n + " is greater than the no " + " of nodes in the list");
                     return;
                 }
                 ref_ptr = ref_ptr.next;
@@ -42,21 +41,18 @@ class LinkedList
             {
 
                 if(head != null)
-                    System.out.println("Node no. " + n +
-                            " from last is " +
-                            head.data);
+                    System.out.println("Node no. " + n + " from last is " + head.data);
             }
             else
             {
 
+                System.out.println(ref_ptr.data);
                 while (ref_ptr != null)
                 {
                     main_ptr = main_ptr.next;
                     ref_ptr = ref_ptr.next;
                 }
-                System.out.println("Node no. " + n +
-                        " from last is " +
-                        main_ptr.data);
+                System.out.println("Node no. " + n + " from last is " + main_ptr.data);
             }
         }
     }
@@ -84,6 +80,6 @@ class LinkedList
         llist.push(15);
         llist.push(35);
 
-        llist.printNthFromLast(4);
+        llist.printNthFromLast(3);
     }
 }
