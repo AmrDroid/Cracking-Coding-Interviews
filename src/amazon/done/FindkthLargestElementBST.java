@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 class mNode {
 
@@ -75,8 +75,7 @@ class BinarySearchTree {
 
         // If c becomes k now, then this is the k'th largest
         if (C.c == k) {
-            System.out.println(k + "th largest element is " +
-                    mNode.data);
+            System.out.println(k + "th largest element is " + mNode.data);
             return;
         }
 
