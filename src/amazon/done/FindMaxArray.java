@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 public class FindMaxArray {
     static int findMaximum(int arr[], int low, int high)
