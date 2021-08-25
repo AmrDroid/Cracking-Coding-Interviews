@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
