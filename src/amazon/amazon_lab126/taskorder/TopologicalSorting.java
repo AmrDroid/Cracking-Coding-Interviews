@@ -25,8 +25,7 @@ public class TopologicalSorting {
     }
 
     // A recursive function used by topologicalSort
-    void topologicalSortUtil(int v, boolean visited[],
-                             Stack<Integer> stack) {
+    void topologicalSortUtil(int v, boolean visited[], Stack<Integer> stack) {
         // Mark the current node as visited.
         visited[v] = true;
         Integer i;
@@ -42,7 +41,7 @@ public class TopologicalSorting {
 
         // Push current vertex to stack
         // which stores result
-        stack.push(new Integer(v));
+        stack.push(v);
     }
 
     // The function to do Topological Sort.
@@ -79,8 +78,7 @@ public class TopologicalSorting {
         g.addEdge(2, 3);
         g.addEdge(3, 1);
 
-        System.out.println("Following is a Topological "
-                + "sort of the given graph");
+        System.out.println("Following is a Topological " + "sort of the given graph");
         // Function Call
         g.topologicalSort();
     }
