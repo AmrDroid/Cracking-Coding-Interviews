@@ -1,4 +1,4 @@
-package amazon;
+package amazon_lab126.done;
 
 public class ArthimaticWithoutArth {
 
@@ -10,7 +10,6 @@ public class ArthimaticWithoutArth {
             // carry now contains common
             // set bits of x and y
             int carry = x & y;
-
             // Sum of bits of x and
             // y where at least one
             // of the bits is not set
@@ -22,6 +21,12 @@ public class ArthimaticWithoutArth {
             y = carry << 1;
         }
         return x;
+    }
+    static int subtract(int x, int y)
+    {
+        if (y == 0)
+            return x;
+        return subtract(x ^ y, (~x & y) << 1);
     }
 
     static int multiply(int x, int y) {
@@ -41,6 +46,7 @@ public class ArthimaticWithoutArth {
         return -1;
     }
 
+
     static int divide(int dividend, int divisor)
     {
 
@@ -48,10 +54,9 @@ public class ArthimaticWithoutArth {
         // sign will be negative only iff
         // either one of them is negative
         // otherwise it will be positive
-        int sign = ((dividend < 0) ^
-                (divisor < 0)) ? -1 : 1;
+        int sign = ((dividend < 0) ^ (divisor < 0)) ? -1 : 1;
 
-        // Update both divisor and
+        // Update both bdivisor and
         // dividend positive
         dividend = Math.abs(dividend);
         divisor = Math.abs(divisor);
@@ -70,12 +75,6 @@ public class ArthimaticWithoutArth {
         return quotient;
     }
 
-    static int subtract(int x, int y)
-    {
-        if (y == 0)
-            return x;
-        return subtract(x ^ y, (~x & y) << 1);
-    }
 
 
     // Driver code
@@ -85,6 +84,8 @@ public class ArthimaticWithoutArth {
         System.out.print("\n" + multiply(5, -11));
         System.out.print("\n" + divide(5, -11));
         System.out.print("\n" + subtract(5, -11));
+
+
 
     }
 
