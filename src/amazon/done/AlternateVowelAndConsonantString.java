@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 public class AlternateVowelAndConsonantString {
     static boolean isVowel(char ch) {
