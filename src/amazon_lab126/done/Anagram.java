@@ -1,12 +1,11 @@
-package amazon;
+package amazon_lab126.done;
 
 public class Anagram {
     static int NO_OF_CHARS = 256;
 
     // function to check if two strings
 // are anagrams of each other
-    static boolean areAnagram(char[] str1,
-                              char[] str2) {
+    static boolean areAnagram(char[] str1, char[] str2) {
         // If both strings are of different
         // length. Removing this condition
         // will make the program fail for
