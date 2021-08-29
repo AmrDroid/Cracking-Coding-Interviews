@@ -1,4 +1,4 @@
-package amazon.amazon_lab126;
+package amazon_lab126.done;
 
 public class WriteaProgramToPrintAllPermutationsofaGivenString {
 
