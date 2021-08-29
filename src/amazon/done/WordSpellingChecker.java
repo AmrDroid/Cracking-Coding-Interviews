@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 class Trienode
 {
 
@@ -76,14 +76,12 @@ class WordSpellingChecker {
 
         // Traverse the string
         for (int i = 0; i < key.length(); i++) {
-
             // If current character not
             // present in the Trie
             if (root.Trie[key.charAt(i)] == null) {
                 printSuggestions(root, key.substring(0, i));
                 return false;
             }
-
             // Update root
             root = root.Trie[key.charAt(i)];
         }
