@@ -1,17 +1,15 @@
-package amazon;
+package amazon.done;
 
 public class WriteaniterativeLogyfunctionforpowxy {
 
 
     /* Iterative Function to
     calculate (x^y) in O(logy) */
-    static int power(int x, int y)
-    {
+    static int power(int x, int y) {
         // Initialize result
         int res = 1;
 
-        while (y > 0)
-        {
+        while (y > 0) {
             // If y is odd,
             // multiply
             // x with result
@@ -25,13 +23,21 @@ public class WriteaniterativeLogyfunctionforpowxy {
         return res;
     }
 
+    static int pow(int x, int y) {
+        int res=1;
+        while (y > 0) {
+          res=res*x;
+            y--;
+        }
+        return res;
+    }
+
     // Driver Code
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         int x = 3;
         int y = 5;
 
-        System.out.println("Power is " +
-                power(x, y));
+        System.out.println("Power is " + power(x, y));
+        System.out.println("Power is " + pow(x, y));
     }
 }
