@@ -1,4 +1,6 @@
-package amazon;
+package amazon_lab126.done;
+
+import java.util.Arrays;
 
 public class BalancedSubStringParenthesisNumber {
 
@@ -13,11 +15,10 @@ public class BalancedSubStringParenthesisNumber {
 
         // d stores checks the depth of our sequence
         // For example level of () is 1
-        // and that of (()) is 2.
+        // and that of ((s)) is 2.
         int d = 0;
 
         for (int i = 0; i < n; i++) {
-
             // If open bracket
             // increase depth
             if (str.charAt(i) == '(')
@@ -34,6 +35,7 @@ public class BalancedSubStringParenthesisNumber {
                 arr[d]++;
                 d--;
             }
+//           System.out.println(d+"  "+ans+"  "+ Arrays.toString(arr));
         }
 
         // Return the required answer
