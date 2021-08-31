@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 import java.util.Queue;
         import java.util.LinkedList;
