@@ -1,4 +1,4 @@
-package amazon;
+package amazon_lab126.done;
 
 import java.util.*;
 
@@ -36,8 +36,7 @@ class BalanceBST
     }
 
     /* Recursive function to construct binary tree */
-    balanceNode buildTreeUtil(Vector<balanceNode> balanceNodes, int start,
-                       int end)
+    balanceNode buildTreeUtil(Vector<balanceNode> balanceNodes, int start, int end)
     {
         // base case
         if (start > end)
