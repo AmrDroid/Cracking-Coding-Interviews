@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 public class WindowSlidingTechnique {
     static int maxSum(int arr[], int n, int k)
