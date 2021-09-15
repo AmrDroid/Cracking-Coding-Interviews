@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 //https://www.geeksforgeeks.org/puzzle-two-robot-parachute-line/
 public class TwoRobotWithParachuteInaLine {
 //    void roboMeet()
