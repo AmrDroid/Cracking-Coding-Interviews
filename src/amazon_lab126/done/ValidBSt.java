@@ -1,4 +1,4 @@
-package amazon;
+package amazon_lab126.done;
 
 public class ValidBSt {
 
@@ -22,16 +22,13 @@ public class ValidBSt {
         // should be less than root's data
         if (l != null && root.data <= l.data)
             return false;
-
         // if right node exist then check it has
         // correct data or not i.e. right node's data
         // should be greater than root's data
         if (r != null && root.data >= r.data)
             return false;
-
         // check recursively for every node.
-        return isBST(root.left, l, root) &&
-                isBST(root.right, root, r);
+        return isBST(root.left, l, root) && isBST(root.right, root, r);
     }
 
     // Helper function that allocates a new node with the
