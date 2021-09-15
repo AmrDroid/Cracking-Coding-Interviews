@@ -25,13 +25,11 @@ class TwoNodesBSTSwappedCorrectBST {
         swNode pre = null;
         while (curr != null) {
             if (curr.left == null) {
-
                 // If this swNode is smaller than
                 // the previous swNode, it's
                 // violating the BST rule.
 
-                if (first == null && prev != null &&
-                        prev.data > curr.data) {
+                if (first == null && prev != null && prev.data > curr.data) {
                     // If this is first violation,
                     // mark these two swNodes as
                     // 'first' and 'last'
@@ -39,8 +37,7 @@ class TwoNodesBSTSwappedCorrectBST {
                     last = curr;
                 }
 
-                if (first != null &&
-                        prev.data > curr.data) {
+                if (first != null && prev.data > curr.data) {
                     // If this is second violation,
                     // mark this swNode as last
                     last = curr;
@@ -51,8 +48,7 @@ class TwoNodesBSTSwappedCorrectBST {
             } else {
                 /* Find the inorder predecessor of current */
                 pre = curr.left;
-                while (pre.right != null &&
-                        pre.right != curr) {
+                while (pre.right != null && pre.right != curr) {
                     pre = pre.right;
                 }
 
@@ -65,8 +61,7 @@ class TwoNodesBSTSwappedCorrectBST {
                     // If this swNode is smaller than
                     // the previous swNode, it's
                     // violating the BST rule.
-                    if (first == null && prev != null &&
-                            prev.data > curr.data) {
+                    if (first == null && prev != null && prev.data > curr.data) {
                         // If this is first violation,
                         // mark these two swNodes as
                         // 'first' and 'last'
@@ -74,8 +69,7 @@ class TwoNodesBSTSwappedCorrectBST {
                         last = curr;
                     }
 
-                    if (first != null &&
-                            prev.data > curr.data) {
+                    if (first != null && prev.data > curr.data) {
                         // If this is second violation,
                         // mark this swNode as last
                         last = curr;
