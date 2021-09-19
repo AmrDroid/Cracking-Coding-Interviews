@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 class Node {
     int key;
