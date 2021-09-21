@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 public class TimSort {
 
@@ -20,8 +20,7 @@ public class TimSort {
 
     // This function sorts array from left index to
     // to right index which is of size atmost RUN
-    public static void insertionSort(int[] arr, int left,
-                                     int right)
+    public static void insertionSort(int[] arr, int left, int right)
     {
         for (int i = left + 1; i <= right; i++)
         {
