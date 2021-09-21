@@ -87,16 +87,15 @@ public class TrieInsertAndSearch {
     }
 
 
-
     public class Trie {
-        boolean isEndOfWord;
-        Trie children[] = new Trie[26];
+
+        boolean eow = false;
+        Trie[] children = new Trie[26];
 
         Trie() {
-            for (int i = 0; i < 26; i++) {
-                children[i] = new Trie();
-            }
-            isEndOfWord = false;
+            for (int i = 0; i < 26; i++)
+                children[i] = null;
+            eow = false;
         }
     }
 
@@ -104,29 +103,26 @@ public class TrieInsertAndSearch {
 
     void insert2(String str) {
         Trie pCrawl = root11;
-        for (int level = 0; level < str.length(); level++) {
-            int index = (str.charAt(level) - '0');
+
+        for (int i = 0; i < str.length(); i++) {
+            int index = (str.charAt(i) - '0');
             if (pCrawl.children[index] == null)
                 pCrawl.children[index] = new Trie();
             pCrawl = pCrawl.children[index];
         }
-        pCrawl.isEndOfWord = true;
+        pCrawl.eow = true;
     }
 
     boolean search2(String str) {
         Trie pCrawl = root11;
         for (int level = 0; level < str.length(); level++) {
-            int index = (str.charAt(level) - '0');
+            int index = (str.charAt(level) - 'a');
             if (pCrawl.children[index] == null)
                 return false;
             pCrawl = pCrawl.children[index];
         }
-        return pCrawl.isEndOfWord;
+        return pCrawl.eow;
     }
-
-
-
-
 
 
 }
