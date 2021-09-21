@@ -6,13 +6,10 @@ public class TrappingRainWater {
         // indices to traverse the array
         int left = 0;
         int right = n - 1;
-        // To store Left max and right max
-        // for two pointers left and right
+        // To store Left max and right max// for two pointers left and right
         int l_max = 0;
         int r_max = 0;
-
-        // To store the total amount
-        // of rain water trapped
+        // To store the total amount// of rain water trapped
         int result = 0;
         while (left <= right) {
             // We need check for minimum of left
