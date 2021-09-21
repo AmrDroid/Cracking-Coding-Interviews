@@ -67,7 +67,6 @@ class VerticalSumTree {
         TreeMap<Integer, Integer> hM = new TreeMap<Integer, Integer>();
         // Calls the VerticalSumUtil() to store the// vertical sum values in hM
         VerticalSumUtil(root, 0, hM);
-
         // Prints the values stored by VerticalSumUtil()
         if (hM != null) {
             System.out.println(hM.entrySet());
