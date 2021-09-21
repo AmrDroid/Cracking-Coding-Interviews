@@ -1,4 +1,4 @@
-package amazon.amazon_lab126.taskorder;
+package amazon_lab126.taskorder;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Stack;
