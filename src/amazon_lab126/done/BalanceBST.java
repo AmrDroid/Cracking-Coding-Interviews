@@ -4,26 +4,22 @@ import java.util.*;
 
 /* A binary tree balanceNode has data, pointer to left child
    and a pointer to right child */
-class balanceNode
-{
+class balanceNode {
     int data;
     balanceNode left, right;
 
-    public balanceNode(int data)
-    {
+    public balanceNode(int data) {
         this.data = data;
         left = right = null;
     }
 }
 
-class BalanceBST
-{
+class BalanceBST {
     balanceNode root;
 
     /* This function traverse the skewed binary tree and
        stores its balanceNodes pointers in vector balanceNodes[] */
-    void storeBSTbalanceNodes(balanceNode root, Vector<balanceNode> balanceNodes)
-    {
+    void storeBSTbalanceNodes(balanceNode root, Vector<balanceNode> balanceNodes) {
         // Base case
         if (root == null)
             return;
@@ -36,8 +32,7 @@ class BalanceBST
     }
 
     /* Recursive function to construct binary tree */
-    balanceNode buildTreeUtil(Vector<balanceNode> balanceNodes, int start, int end)
-    {
+    balanceNode buildTreeUtil(Vector<balanceNode> balanceNodes, int start, int end) {
         // base case
         if (start > end)
             return null;
@@ -56,8 +51,7 @@ class BalanceBST
 
     // This functions converts an unbalanced BST to
     // a balanced BST
-    balanceNode buildTree(balanceNode root)
-    {
+    balanceNode buildTree(balanceNode root) {
         // Store balanceNodes of given BST in sorted order
         Vector<balanceNode> balanceNodes = new Vector<balanceNode>();
         storeBSTbalanceNodes(root, balanceNodes);
@@ -68,8 +62,7 @@ class BalanceBST
     }
 
     /* Function to do preorder traversal of tree */
-    void preOrder(balanceNode balanceNode)
-    {
+    void preOrder(balanceNode balanceNode) {
         if (balanceNode == null)
             return;
         System.out.print(balanceNode.data + " ");
@@ -78,8 +71,7 @@ class BalanceBST
     }
 
     // Driver program to test the above functions
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
          /* Constructed skewed binary tree is
                 10
                /
@@ -101,6 +93,7 @@ class BalanceBST
         System.out.println("Preorder traversal of balanced BST is :");
         tree.preOrder(tree.root);
     }
+
 }
 
 
