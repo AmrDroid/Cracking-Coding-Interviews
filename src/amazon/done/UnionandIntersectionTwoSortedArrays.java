@@ -1,9 +1,8 @@
-package amazon;
+package amazon.done;
 
 public class UnionandIntersectionTwoSortedArrays {
 
-    static void UnionArray(int arr1[],
-                           int arr2[])
+    static void UnionArray(int arr1[], int arr2[])
     {
         // Taking max element present in either array
         int m = arr1[arr1.length - 1];

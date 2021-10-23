@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 import java.util.*;
 //https://krishankantsinghal.medium.com/how-to-implement-phonebook-using-tries-data-structure-b19a83ac7f1e

@@ -1,4 +1,4 @@
-package amazon;
+package amazon.done;
 
 import java.util.HashSet;
 import java.util.Queue;
@@ -22,9 +22,7 @@ public class WordLadder {
 // to reach 'target' from 'start'
 // using minimum number of adjacent moves.
 // D is dictionary
-    static int shortestChainLen(String start,
-                                String target,
-                                Set<String> D)
+    static int shortestChainLen(String start, String target, Set<String> D)
     {
 
         if(start == target)
@@ -45,13 +43,10 @@ public class WordLadder {
         // While the queue is non-empty
         while (!Q.isEmpty())
         {
-
             // Increment the chain length
             ++level;
-
             // Current size of the queue
             int sizeofQ = Q.size();
-
             // Since the queue is being updated while
             // it is being traversed so only the
             // elements which were already present

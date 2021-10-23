@@ -1,5 +1,5 @@
-package amazon;
-import java.io.*;
+package amazon.done;
+
 class bstNode
 {
     int data;
