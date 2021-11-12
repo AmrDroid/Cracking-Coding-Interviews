@@ -1,5 +1,7 @@
 package amazon_lab126.done;
 
+import java.util.Arrays;
+
 public class Anagram {
     static int NO_OF_CHARS = 256;
 
@@ -48,8 +50,8 @@ public class Anagram {
             System.out.print("The two strings are " +
                     "anagram of each other");
         else
-            System.out.print("The two strings are " +
-                    "not anagram of each other");
+            System.out.print("The two strings are " + "not anagram of each other");
     }
+
 
 }
